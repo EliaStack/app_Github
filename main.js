@@ -1,0 +1,1 @@
+alert("Voici une alert");

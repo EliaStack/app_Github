@@ -1,0 +1,131 @@
+<!-- il faut appuyer sur "!" pr faire apparaître le head -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8"> <!-- Alphabet utilisé dans les pages -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptation de la page -->
+    <title>Ma 1ère page </title>
+    <link rel="stylesheet" href="style.css"> <!-- Charge une ressource externe -->
+<link rel="icon" href="robot.ico"/> <!-- Add icon to browser -->
+    <style>
+        .bouton {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline;
+        }
+
+        #bouton-1 {
+            background-color: red;
+        }
+
+        #bouton-2 {
+            font-weight: bold;
+        }
+    </style>
+
+    <!-- script = Utiliser JavaScript -->
+    <script>
+alert('Bienvenue sur mon site')
+    </script>
+</head>
+
+<body> <!-- Tout ce qui s'affiche sur la page html -->
+    <header> <!-- En-tête/barre d'application -->
+        <!-- Reste le même sur toute les pages -->
+        <h1>Comment coder</h1>
+        <nav> <!-- Naviguer et déclarer des liens -->
+            <ul>
+                <li> <a href="a.html"> La balise d'ancrage a</li>
+                <li> <a href="div.html"> La balise d'ancrage div </li>
+                <li><a href="form.html">La balise d'ancrage form</li>
+                <li><a href="headings.html">La balise d'ancrage headings</li>
+                <li><a href="img.html">La balise d'ancrage img</li>
+                <li><a href="index.html">La balise d'ancrage index</li>
+                <li><a href="input.html">La balise d'ancrage input</li>
+                <li><a href="listes.html">La balise d'ancrage listes</li>
+                <li><a href="p.html">La balise d'ancrage p</li>
+                <li><a href="span.html">La balise d'ancrage span</li>
+                <li><a href="strong-em.html">La balise d'ancrage strong-em</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> <!-- Mettre le gros du site -->
+        <!-- Article et autres composants -->
+        <section> <!-- Séparer un article du bloc -->
+            <h2>Artcile de blog</h2>
+            <article> <!-- Permet au robot de comprendre l'article -->
+                <h3>Mon super article</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur quam consequatur
+                    voluptate reprehenderit, dignissimos, excepturi officia eius in nihil delectus expedita. Quibusdam
+                    saepe ad tenetur cum nemo reprehenderit consequatur?
+                </p>
+                <p><strong>L'introduction de mon article de blog résumé en un paragraphe</strong></p>
+            </article>
+        </section>
+        <section>
+            <h2>tableau</h2>
+            <table border="1"> <!-- Parent d'un tableau / border = met un contour/bordure dans le tableau-->
+                <thead>
+                    <tr> <!-- Faire une ligne -->
+                        <th>Prénom</th> <!-- th = En-tête/titre -->
+                        <th>Age</th>
+                        <th>Moyenne</th>
+                    </tr>
+                </thead> <!-- Header du tableau -->
+                <tbody>
+                    <tr> <!-- tr = faire une ligne -->
+                        <td>Alice</td> <!-- td = pour la data -->
+                        <td>24</td> <!-- 2ème colonne-->
+                        <td>16/20</td> <!-- 3ème colonne -->
+                    </tr>
+                    <tr> <!-- tr = faire une ligne -->
+                        <td>Bob</td> <!-- td = pour la data -->
+                        <td>25</td> <!-- 2ème colonne-->
+                        <td>14/20</td> <!-- 3ème colonne -->
+                    </tr>
+                </tbody> <!-- Corps du tableau -->
+                <tfoot> <!-- Footer du tableau - le bas -->
+                    <tr>
+                        <td>2</td>
+                        <td>24.5</td>
+                        <td>15/20</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section>
+            <h2>Input texte</h2>
+            <input type="text" />
+            <br />
+            <br />
+            <textarea name="" id="" rows="5" cols="50" placeholder="Zone de texte"></textarea> <!-- Espace texte -->
+        </section>
+        <section>
+            <h2>Autres</h2>
+            <code>print("Bonjour")</code> <!-- Indique au navigateur que c'est du code -->
+        </section>
+        <section>
+            <h2>Boutons</h2>
+            <div class="bouton" id="bouton-1">Bouton 1</div>
+            <div class="bouton" id="bouton-2">Bouton 2</div>
+        </section>
+    </main>
+    <footer> <!-- Pareil que header mais version bas de page -->
+        <div>
+            <h5>Réseau sociaux</h5>
+            <ol>
+                <li><a href="https://www.youtube.com/@commentcoder">youtube</a></li>
+                <li><a href="https://www.github.com/commentcoder">github</a></li>
+            </ol>
+        </div>
+        <span>Commentcoder2024</span>
+    </footer>
+<script src="main.js"></script>
+</body>
+
+</html>
+<!--  -->
